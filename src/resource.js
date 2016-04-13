@@ -1,8 +1,13 @@
-var res = {
-    HelloWorld_png : "res/HelloWorld.png",
-};
+var g_ressources = (function () {
+    var retval = [],
+        imgs = ["bg", "platform", "bird", "enemigo", "sling1", "sling2", "sling3", "terreno", "wood1", "wood2", "smoke", "menu_refresh", "menu_back"];
 
-var g_resources = [];
-for (var i in res) {
-    g_resources.push(res[i]);
-}
+    for (var i = 0; i < imgs.length; i++) {
+        retval.push({
+            type: "image",
+            src: 'res/' + imgs[i] + '.png'
+        });
+    }
+
+    return retval;
+}());
