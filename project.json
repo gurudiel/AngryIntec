@@ -7,12 +7,14 @@
     "noCache" : false,
     "id" : "gameCanvas",
     "renderMode" : 0,
-    "engineDir":"frameworks/cocos2d-html5",
+    "engineDir":"frameworks/cocos2dx.min.js",
 
     "modules" : ["cocos2d"],
 
     "jsList" : [
         "src/resource.js",
-        "src/app.js"
+        "src/app.js",
+        "src/b2.js",
+        "src/box2d.js"
     ]
 }
